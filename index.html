@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rich Man's Reddit</title>
+
+	  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  </head>
+  <body ng-app="redditApp" ng-controller="redditController">
+    <h1 class="head">r/aww</h1>
+    <div class="container">
+      <div class="posts" ng-repeat="post in posts">
+        <h1 class="title">{{post.data.title}}</h1>
+        <h2 class="author">By: {{post.data.author}}</h2>
+        <img ng-src ="{{post.data.thumbnail}}">
+        <p class ="comments">{{post.data.num_comments}} comments </p>
+      </div>
+    </div>
+    <script src="lib/angular.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>

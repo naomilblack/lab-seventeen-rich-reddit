@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Kavoon');
+
+body{
+background-image: url("http://www.clker.com/cliparts/9/i/m/Z/7/d/grey-paw-print-with-gradient.svg");
+background-color: rgba(191, 63,65, 0.5);
+}
+
+.container{
+  display:flex;
+  height:300px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.posts{
+  width: 70%;
+  font-family: 'Indie Flower', cursive;
+  text-align:center;
+  border:5px double pink;
+  background-color: rgba(255,255,255,0.7);
+  margin:20px auto;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1.4em;
+}
+
+h1.head{
+  background-color: pink;
+  color:yellow;
+  text-align: center;
+  margin: 20px auto;
+  font-family: 'Kavoon', cursive;
+  font-size: 60px;
+}
+
+h1.title{
+  border-bottom: 1px dotted rgb(204, 204, 204);
+  color:#333333;
+}
+
+img {
+  width:30%;
+  height: 200px;
+}
